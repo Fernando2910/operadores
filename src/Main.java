@@ -1,48 +1,23 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+import java.util.Scanner;//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        int operador1 =0,operador2 = 0;
+
+        System.out.println("Bienvenido");
+        System.out.println();
+        System.out.println("Por favor ingresa un valor entero: ");
+        operador1 = entrada.nextInt();
+        System.out.println("Por favor ingresa otro valor entero:");
+        operador2 = entrada.nextInt();
+
+        operadores operadores = new operadores();
+        operadores.suma(operador1,operador2);
+        operadores.resta(operador1,operador2);
+        operadores.multiplicacion(operador1,operador2);
+        operadores.division(operador1,operador2);
+        operadores.modulo(operador1,operador2);
 
     }
-
-    public class operadores {
-        int operador1 =0,operador2 = 0;
-        
-
-        public int suma (int op1, int op2){
-            int resultado=0;
-
-            resultado = op1 + op2;
-
-            return resultado;
-        }
-        public int resta (int op1, int op2){
-            int resultado=0;
-
-            resultado = op1 - op2;
-
-            return resultado;
-        }
-        public int multiplicacion (int op1, int op2){
-            int resultado=0;
-
-            resultado = op1 * op2;
-
-            return resultado;
-        }
-        public int division (int op1, int op2){
-            int resultado=0;
-
-            resultado = op1 / op2;
-
-            return resultado;
-        }
-        public int modulo (int op1, int op2){
-            int resultado=0;
-
-            resultado = op1 % op2;
-
-            return resultado;
-        }
-;    }
 }
