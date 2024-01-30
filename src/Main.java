@@ -7,9 +7,9 @@ public class Main {
 
         System.out.println("Bienvenido");
         System.out.println();
-        System.out.println("Por favor ingresa un valor entero: ");
+        System.out.print("Por favor ingresa un valor entero: ");
         operador1 = entrada.nextInt();
-        System.out.println("Por favor ingresa otro valor entero:");
+        System.out.print("Por favor ingresa otro valor entero:");
         operador2 = entrada.nextInt();
 
         operadores operadores = new operadores();
