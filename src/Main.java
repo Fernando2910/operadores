@@ -2,6 +2,7 @@ import java.util.Scanner;//TIP To <b>Run</b> code, press <shortcut actionId="Run
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
+        //Declaro la variable de entrada, x ,y para despues pedir sus valores
         Scanner entrada = new Scanner(System.in);
         int x =0,y = 0;
 
@@ -14,7 +15,7 @@ public class Main {
 
         System.out.println();
 
-
+        //Llamo la clase operador y hago uso de sus metodos
         operadores operadores = new operadores();
         operadores.suma(x,y);
         operadores.resta(x,y);
