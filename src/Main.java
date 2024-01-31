@@ -3,21 +3,23 @@ import java.util.Scanner;//TIP To <b>Run</b> code, press <shortcut actionId="Run
 public class Main {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        int operador1 =0,operador2 = 0;
+        int x =0,y = 0;
 
         System.out.println("Bienvenido");
         System.out.println();
         System.out.print("Por favor ingresa un valor entero: ");
-        operador1 = entrada.nextInt();
+        x = entrada.nextInt();
         System.out.print("Por favor ingresa otro valor entero:");
-        operador2 = entrada.nextInt();
+        y = entrada.nextInt();
+
+        System.out.println();
+
 
         operadores operadores = new operadores();
-        operadores.suma(operador1,operador2);
-        operadores.resta(operador1,operador2);
-        operadores.multiplicacion(operador1,operador2);
-        operadores.division(operador1,operador2);
-        operadores.modulo(operador1,operador2);
-
+        operadores.suma(x,y);
+        operadores.resta(x,y);
+        operadores.multiplicacion(x,y);
+        operadores.division(x,y);
+        operadores.modulo(x,y);
     }
 }
